@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+      <h2 id="quiz-description">¿Cuánto sabes de cultura general?</h2>
+      <button id="btn-start">Comenzar</button>
+    </header>
+    <main id="quiz" class="hidden">
+      <div id="header-app">
+        <div id="current-question"></div>
+        <div id="question-title"></div>
+      </div>
+      <div id="answers"></div>
+      <button id="btn-next">Siguiente</button>
+    </main>
+    <div id="score-container" class="hidden">
+      <p id="score" class="hidden"></p>
+      <p id="score-description"></p>
+      <button id="btn-restart" class="hidden">Volver a jugar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
